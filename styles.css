@@ -1,3 +1,34 @@
+body {
+    font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace !important;
+	/*
+    font-size: var(--body-font-size, 14px);
+	*/
+    line-height: 1.5;
+    color: #c9d1d9;
+    background-color: #0d1117;
+}
+
 h1 {
    color: red;
+}
+
+.left_pannel{
+	display: inline-block;	
+}
+
+
+.box{
+	display: inline-block;
+    background-color: var(--color-canvas-default);
+    border-color: var(--color-border-default);
+    border-radius: var(--primer-borderRadius-medium, 6px);
+    border-style: solid;
+    border-width: var(--primer-borderWidth-thin, 1px);
+
+}
+.p-5 {
+    padding: 2em !important;
+}
+.mt-3 {
+    margin-top: 2em !important;
 }
