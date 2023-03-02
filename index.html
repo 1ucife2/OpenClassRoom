@@ -1,10 +1,40 @@
 <!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
 <html>
 <head>
-   <title>Enfin un titre à cette page</title>
+   <title>Git exercices de base</title>
    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-   <h1>Un super titre tu parles ...</h1>
+   <h1>Git exercices</h1>
+   <div class="left_pannel">
+   <img src="pics/gitSchema.png" style="width:35%" />
+   </div>
+   <div class="box p-5 mt-3">
+   <h2>Commande git initialisation</h2>
+   <ul>
+   <li>git config --global user.name "John Doe"</li>
+   <li>git config --global user.email johndoe@example.com</li>   
+   <li>git config --global color.diff auto</li>
+   <li>git config --global color.status auto </li>
+   <li>git config --global color.branch auto</li>   
+   <li>git config --global core.editor notepad++</li>
+   <li>--global merge.tool vimdiff</li>
+   <li>git init</li>
+   </ul>
+   <h2>Relier un dépôt distant</h2>
+   <li>git remote add origin {adresse du GitHub}</li>
+   <li>git branch -M main</li>   
+   <li>git push -u origin main</li>
+   <h2>Commandes de gestion basique de branches</h2>
+   <li>touch {nom du fichier} > creation de fichier</li>
+   <li>git add {nom du fichier} > stage les modifications (sauvegarde en dehors)</li>   
+   <li>git commit -m “Ajout des fichiers html et css de base” > valide les modifications en locale sur la branche en cours</li>
+   <li>git push -u origin {nom de la branche sur le repository} > envoi des modifs sur le branche du serveur (repository)</li>
+   <li>git checkout > changer de branche</li>
+   <li>git merge {nom de la branche à fusionner} > fusionne la branche nommée avec celle 'checké'</li>
+   </ul>
+   </div>
 </body>
 </html>
